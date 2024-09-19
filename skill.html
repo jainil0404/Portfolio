@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ol li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ol li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ol li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02rem;
+        }
+
+        .skills {
+            background-color: rgb(0, 0, 33);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .title {
+            padding-top: 30px;
+            color: white;
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .skillbox {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .box {
+            border: 2px solid white;
+            border-radius: 6px;
+            width: 270px;
+            padding: 20px;
+            box-shadow: 12px 12px 13px black;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            animation: mybox 2s step-start 0s infinite normal;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .detail {
+            font-size: 1.2rem;
+            padding-top: 10px;
+        }
+
+        .more {
+            background-color: rgb(0, 0, 33);
+        }
+
+        @keyframes mybox {
+            from {
+                background-color: rgb(0, 0, 33);
+                color: white;
+            }
+
+            to {
+                background-color: rgb(47, 49, 77);
+                color: rgb(241, 250, 238);
+            }
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 23px 122px;
+        }
+
+        .footer div {
+            list-style: none;
+        }
+
+        .footer div a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jainil's Portfolio</div>
+            <div class="right">
+                <ol>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/skill.html">Skills</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <section id="skill" class="skills">
+        <div class="title who">
+            Skills
+        </div>
+        <div class="skillbox">
+            <div class="box">
+
+                <h2>HTML</h2>
+                <p class="detail">One of the core component of Web Development is HTML. A website structure is based
+                    on HTML. To design
+                    websites, you must be convergant with HTML tags, elements & properties.
+                </p>
+
+            </div>
+            <div class="box">
+
+                <h2>CSS</h2>
+                <p class="detail">CSS stands for Cascading Style Sheets. It gives style in the Web Development. CSS
+                    is one of the basic
+                    building blocks for all websites. Well-versed in CSS syntax, selectors & properties.
+                </p>
+
+            </div>
+            <div class="box">
+
+                <h2>Javascript</h2>
+                <p class="detail">JS is a scripting language used to build dynamic & interactive websites. Due to its
+                    widespread use in
+                    online development. It enables us to make responsive webites & sophisticated online apps.
+                </p>
+            </div><br>
+
+            <div class="box">
+
+                <h2>UI/UX</h2>
+                <p class="detail">UI/UX design focuses on creating intuitive and engaging digital experiences. UI (User
+                    Interface) involves the visual elements and layout, while UX (User Experience) emphasizes the
+                    overall usability and satisfaction of a product. Effective UI/UX design combines research,
+                    wireframing, prototyping, and testing to meet user needs and enhance interaction.
+                </p>
+
+            </div>
+            <div class="box">
+
+                <h2>SQL</h2>
+                <p class="detail">SQL (Structured Query Language) is a programming language used for managing and
+                    manipulating relational databases. It enables users to perform operations like retrieving data
+                    (SELECT), inserting (INSERT), updating (UPDATE), and deleting (DELETE) records. SQL also supports
+                    data aggregation, filtering, and joining tables to analyze complex datasets effectively.
+                </p>
+
+            </div>
+            <div class="box">
+
+                <h2>Python</h2>
+                <p class="detail">Python is a versatile, high-level programming language known for its readability and
+                    simplicity. It supports multiple programming paradigms, including procedural, object-oriented, and
+                    functional programming. Widely used in web development, data analysis, artificial intelligence, and
+                    automation, Python has a rich ecosystem of libraries and frameworks, making it accessible for
+                    beginners and professionals alike.
+                </p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Jainil's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/skill.html">Skills</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </div>
+            <div class="footer-third">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/skill.html">Skills</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </div>
+            <div class="footer-fourth">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/skill.html">Skills</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.jainilsportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
